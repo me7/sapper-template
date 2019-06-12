@@ -2,7 +2,7 @@
   let examples = [
     { href: "user.json", text: "generate json from server" },
     { href: "json", text: "list data from json" },
-    { href: "db", text: "database connection" }
+    { href: "database", text: "database connection" }
   ];
 </script>
 
