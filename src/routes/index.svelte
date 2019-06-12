@@ -10,13 +10,18 @@
   h1 {
     color: $blue;
     font-size: 2.8em;
-    text-transform: uppercase;
     font-weight: 700;
     margin: 0 0 0.5em 0;
   }
 
   figure {
     margin: 0 0 1em 0;
+  }
+
+  a {
+    text-transform: uppercase;
+    color: red;
+    font-weight: 700;
   }
 
   img {
@@ -40,15 +45,11 @@
   <title>Sapper project template</title>
 </svelte:head>
 
-<h1>Great success!</h1>
-
-<figure>
-  <img alt="Borat" src="great-success.png" />
-  <figcaption>HIGH FIVE!</figcaption>
-</figure>
-
+<h1>Hello!</h1>
 <p>
-  <strong>
-    Try editing this file (src/routes/index.svelte) to test live reloading.
-  </strong>
+  This is sapper example by Gampol.
+  <br />
+  see
+  <a href="example">example</a>
+  for more detail
 </p>
