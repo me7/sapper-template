@@ -59,7 +59,9 @@
       </a>
     </li>
     <li>
-      <a class={segment === 'about' ? 'selected' : ''} href="about">about</a>
+      <a class={segment === 'scoreboard' ? 'selected' : ''} href="scoreboard">
+        scoreboard
+      </a>
     </li>
 
     <!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
