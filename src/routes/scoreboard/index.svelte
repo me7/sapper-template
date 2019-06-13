@@ -1,12 +1,32 @@
+<script context="module">
+  export function preload() {
+    return this.fetch("/scoreboard/players.json")
+      .then(r => r.json())
+      .then(player => {
+        return { player };
+      })
+      .catch(e => {
+        console.log(e);
+        let player = [];
+        return { player };
+      });
+  }
+</script>
+
 <script>
   import Navbar from "./_Navbar.svelte";
   import Player from "./_Player.svelte";
   import AddPlayer from "./_AddPlayer.svelte";
 
-  let player = [
-    { name: "John", score: 100 },
-    { name: "Ball", score: 10 },
-    { name: "Hall", score: 70 }
+  export let player = [
+    { name: "john", score: 40 },
+    { name: "ball", score: 50, ts: new Date() },
+    { name: "hall", score: 80 },
+    { name: "imp", score: 30 },
+    { name: "nok", score: 30 },
+    { name: "imp", score: 30 },
+    { name: "kok", score: 30 },
+    { name: "imp", score: 30 }
   ];
 
   const addPlayer = e => {
