@@ -1,5 +1,6 @@
 <script>
   import { createEventDispatcher } from "svelte";
+  import TimeAgo from "./_TimeAgo.svelte";
   const dispatch = createEventDispatcher();
 
   export let player = {
@@ -30,7 +31,7 @@
     <button class="btn btn-sm btn-danger" on:click={deletePlayer}>x</button>
   </h1>
   <h3>{player.score}</h3>
-   {new Date(player.ts)}
+  <TimeAgo time={Date.parse(player.ts)} />
   {#if showButton}
     <button class="btn btn-dark" on:click={decScore}>-</button>
     <button class="btn btn-primary" on:click={incScore}>+</button>
