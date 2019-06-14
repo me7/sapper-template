@@ -1,0 +1,59 @@
+@api = https://jsonplaceholder.typicode.com
+
+### SELECT todo
+    GET {{api}}/todos/1
+
+### list all 200 todos
+    GET {{api}}/todos
+
+### filter todo
+    GET {{api}}/todos?userId=4
+
+### CREATE todo
+    POST {{api}}/todos
+    Content-Type: application/json
+
+    {
+        "title": "foo",
+        "author": "bar",
+        "done": false
+    }
+
+### UPDATE todo
+    PUT {{api}}/todos/15
+    Content-Type: application/json
+
+    {
+        "title": "foo",
+        "author": "bar",
+        "done": false
+    }
+
+### UPDATE todo single field
+    PATCH {{api}}/todos/15
+    Content-Type: application/json
+
+    {
+        "title": "hello"
+    }
+
+### DELETE todo
+DELETE {{api}}/users/15
+
+### 10 users
+    GET {{api}}/users
+
+### 100 posts
+    GET {{api}}/posts
+
+### 100 albums
+    GET {{api}}/albums
+
+### 200 todos   
+    GET {{api}}/todos
+
+### 500 comments
+    GET {{api}}/comments
+
+### 5000 photos
+    GET {{api}}/photos
