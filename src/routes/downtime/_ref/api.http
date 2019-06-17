@@ -1,0 +1,15 @@
+@api = http://localhost:3000/downtime/api
+
+### get downtime
+GET {{api}}/downtime
+
+
+### post downtime
+POST {{api}}/downtime
+# POST https://jsonplaceholder.typicode.com/todos
+Content-Type: application/json
+
+{
+    "user":"gampol",
+    "machine":"flying probe"
+}
